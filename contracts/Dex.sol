@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 pragma experimental ABIEncoderV2;
-import "../contracts/Wallet.sol";
+import "./Wallet.sol";
 
 contract Dex is Wallet {
 
