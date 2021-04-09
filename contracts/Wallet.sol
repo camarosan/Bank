@@ -30,7 +30,7 @@ contract Wallet is Ownable {
         balances[msg.sender][ticker] = balances[msg.sender][ticker].add(amount);
 
     }
-
+    
     function withdraw(uint256 amount, bytes32 ticker) tokenExist(ticker) external {
          
         require(balances[msg.sender][ticker] >= amount, "Balance not sufficient");
